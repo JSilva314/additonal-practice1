@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      console.log("Jose");
+      const tempFahrenheit = 75;
+      let tempCelcius = (tempFahrenheit - 32) * (5 / 9);
+      tempCelcius = Math.floor(tempCelcius);
+      console.log(tempCelcius);
+      tempKelvin = tempCelcius + 273.15;
+      console.log(tempKelvin);
+      const todaysForecast = `The current temperature outside is ${tempFahrenheit} degrees in Fahrenheit, ${tempCelcius} degrees in Celcius, and ${tempKelvin} degrees in Kelvin.`;
+      console.log(todaysForecast);
+    </script>
+    <script>
+      function sayGreeting(firstName, lastName, age, city) {
+        const greeting = `Hello! My name is ${firstName} ${lastName}! I'm ${age} years old, and I'm from ${city}.  It's nice to meet you!`;
+        console.log(greeting);
+        const nameInUpperCase = `${firstName.toUpperCase()} ${lastName.toUpperCase()}`;
+        const nameInLowerCase = `${firstName.toLowerCase()} ${lastName.toLowerCase()}`;
+        console.log(`NAME IN ALL CAPS: ${nameInUpperCase}`);
+        console.log(`name in all lowercase: ${nameInLowerCase}`);
+        return sayGreeting;
+      }
+      
+      const firstName = "Jose";
+      const lastName = "Silva";
+      const myAge = 36;
+      const homeTown = "New York City";
+
+      sayGreeting(firstName, lastName, myAge, homeTown);
+
+
+      console.log(
+        `Hello! My name is ${firstName} ${lastName}! I'm ${myAge} years old, and I'm from ${homeTown}.  It's nice to meet you!`
+      );
+      const initials = firstName.charAt(0) + lastName.charAt(0);
+      console.log(initials);
+    </script>
+  </head>
+  <body></body>
+</html>
